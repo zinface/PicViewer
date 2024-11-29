@@ -4,12 +4,15 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <iostream>
+//#include <fstream>
 #include <QMessageBox>
 #include <QListWidget>
 #include <QMouseEvent>
 #include <QWheelEvent>
 #include <QPoint>
 #include <QRect>
+#include <QFile>
+#include <QTextStream>
 //#include <QSet>
 
 QT_BEGIN_NAMESPACE
@@ -27,7 +30,7 @@ public:
 private slots:
     void ShowPic(QString file, QRect rect);
 
-    void on_pushButton_clicked();
+    void on_open_clicked();
 
     void on_PrePic_clicked();
 
@@ -42,6 +45,14 @@ private slots:
     void mouseReleaseEvent(QMouseEvent *event);
 
     void wheelEvent(QWheelEvent *event);
+
+    void getText(QString imgfile);
+
+    void on_openDir_clicked();
+
+    void on_Jmp_clicked();
+
+    void on_Search_clicked();
 
 private:
     Ui::MainWindow *ui;

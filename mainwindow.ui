@@ -42,7 +42,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="open">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -85,10 +85,82 @@
     <property name="geometry">
      <rect>
       <x>1080</x>
-      <y>10</y>
+      <y>50</y>
       <width>261</width>
-      <height>621</height>
+      <height>341</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>400</y>
+      <width>261</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openDir">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开目录</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Num">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>610</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目前显示第0张图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Jmp">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>610</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>转到现行显示</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="picName">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>0</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>0</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>搜索</string>
     </property>
    </widget>
   </widget>
@@ -98,7 +170,7 @@
      <x>0</x>
      <y>0</y>
      <width>1350</width>
-     <height>23</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
