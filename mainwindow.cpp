@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QDebug>
 QRect labelbeginrect;
 QString imgfile;
 //QString ldfile;
@@ -125,7 +125,7 @@ void MainWindow::on_open_clicked()
 void MainWindow::ShowPic(QString file, QRect rect)
 {
     //ldfile = file;
-    ui->label->setGeometry(rect);
+//    ui->label->setGeometry(rect);
     //std::cout << "执行显示\n";
     img.load(file);
     //int Iwidth=img.width(),Iheight=img.height();
@@ -366,7 +366,7 @@ void MainWindow::on_Search_clicked()
     for (int i = 0; i < count; ++i) {
         QListWidgetItem *item = ui->PicList->item(i);
         itemName = item->text();
-        if(itemName.contains(ui->picName->toPlainText(), Qt::CaseInsensitive)){
+        if(itemName.contains(ui->picName->text(), Qt::CaseInsensitive)){
             ui->PicList->setCurrentRow(i);
             break;
         }
