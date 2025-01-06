@@ -72,6 +72,8 @@ MainWindow::MainWindow(QWidget *parent)
     //ui->PicList->addItems(files);
     ui->PicList->setCurrentRow(imgnum);
     }
+
+    ui->splitter->setSizes(QList<int>() << 70 << 30);
 }
 
 MainWindow::~MainWindow()
